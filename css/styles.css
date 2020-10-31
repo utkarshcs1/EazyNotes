@@ -9,15 +9,15 @@ body{
 }
 
 .dark-mode {
-  color:	#f5fffa;
   background-color: #202020;
+  color: #f5fffa;
+  bod
 }
 
 .heading {
   font-size: 20px;
   text-decoration: none;
 }
-
 
 .new-note {
   display: inline-block;
@@ -27,7 +27,6 @@ body{
   width: 275px;
   height: 250px;
   vertical-align: top;
-  left: 50px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 50px;
@@ -92,6 +91,26 @@ body{
 
 /* Switch */
 
+.theme-switch-wrapper {
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+em {
+ margin-left: 10px;
+  font-size: 1rem;
+  }
+.theme-switch { display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;}
+ 
+
+
+.theme-switch input {
+  display:none;
+}
+
 .slider {
   background-color: #ccc;
   bottom: 0;
@@ -130,8 +149,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
-
+.dkmode {
+  width: 100px;
+  margin-top: 50px;
+}
 
 /* SWITCH END */
 
