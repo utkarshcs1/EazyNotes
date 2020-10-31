@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--Imported CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/images/12345.png">
+    <meta charset="utf-8">
+    <title>EazyNotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Imported Logos Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.cs">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="JavaScript/main.js"></script>
+  </head>
+  <body>
+
+    <div class="top-section">
+        <!-- Heading with Logo-->
+        <div class="heading">
+         <h1> ~EazyNotes~ </h1>
+
+         
+    <!-- Login/Register Section-->
+    <!-- LOGIN FORM START-->
+   <div class="regis">
+     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+     
+     <div id="id01" class="modal">
+       
+       <form class="modal-content animate" action="/action_page.php" method="post">
+         <div class="imgcontainer">
+           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <img src="assets/images/12345.png" alt="Avatar" class="avatar">
+         </div>
+     
+         <div class="container">
+           <label for="uname"><b>Username</b></label>
+           <input type="text" placeholder="Enter Username" name="uname" required>
+     
+           <label for="psw"><b>Password</b></label>
+           <input type="password" placeholder="Enter Password" name="psw" required>
+             
+           <button type="submit">Login</button>
+           <label>
+             <input type="checkbox" checked="checked" name="remember"> Remember me
+           </label>
+         </div>
+     
+         <div class="container" style="background-color:#f1f1f1">
+           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+           <span class="psw"><a href="#">Forgot Password?</a></span>
+         </div>
+       </form>
+     </div>
+    </div>
+  </div>
+  </div>
+
+     <!-- LOGIN FORM END-->
+     <br>
+
+      <center>
+        <!-- Enter New Note-->
+        <div class="new-note"> 
+          <a href="">
+          <i style='font-size:75px' class='fas'>&#xf044;</i>
+          <p> <b> Add New Note </b> </p>
+         </div> </a>
+
+          <!-- Login Box-->
+         <div class="login-box" >
+           <a href="">
+          <i style='font-size:75px' class='fas'>&#xf406;</i>
+         <p class="logintext"> <b> Login / Sign Up</b> </p>
+         <p class="loginboxdesc">(Logging in, enables you to save your notes)</p>
+         </div> </a>
+        </center>
+
+</body>
+
+</html>

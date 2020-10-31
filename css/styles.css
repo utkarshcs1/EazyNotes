@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.cs";
+
+body{
+  background-color:	#f5fffa;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.dark-mode {
+  color:	#f5fffa;
+  background-color: #202020;
+}
+
+.heading {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+.new-note {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 275px;
+  height: 250px;
+  vertical-align: top;
+  left: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+
+}
+
+.login-box {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 275px;
+  height: 250px;
+  vertical-align: top;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;;
+
+}
+
+.logintext {
+  text-decoration: none;
+  text-emphasis: none;
+}
+
+.login-box:visited {
+  color: black;
+}
+.login-box:link {
+  color: black;
+}
+
+.fas {
+  margin-top: 65px;
+} 
+
+.fa {
+  color: aliceblue;
+  background-color: black;
+  border: 10px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: right;
+}
+
+.heading .regis {
+  display: inline;
+}
+.regis {
+  text-align: right;
+  position: absolute;
+  top: 4px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.loginboxdesc {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+}
+
+/* Switch */
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+/* SWITCH END */
+
+/* LOGIN FORM */
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4caf4f00;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  color: aliceblue;
+  background-color: black;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  margin-right: 10px;
+  background-color: #f4433600;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  border-radius: 30px;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 30px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 5px solid black;
+  
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* LOGIN FORM END */
